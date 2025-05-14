@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+     <header>
+        <img src="baner.png" alt="kursy komputerowe">
+        <menu>
+            <nav>
+                <a href="index.html" target="" rel="noopener noreferrer">Strona główna</a>
+                <a href="raty.html" target="_blank" rel="noopener noreferrer">Koszt rat</a>
+                <a href="https://moje-szkolenia.pl/" target="_blank" rel="noopener noreferrer">Nasz partner</a>
+            </nav>
+        </menu>
+    </header>
+
+    <main>
+
+        <h3>Oblicz miesięczną ratę</h3>
+        
+        <form>
+            <input type="checkbox" id="kurs1" class="kontrolki" value="kurs_react" >
+            <label for="kurs1">Kurs React.js</label> 
+            <br><br>
+            
+            <input type="checkbox" id="kurs2" class="kontrolki" name="kurs_react" >
+            <label for="kurs2">Kurs JavaScript</label>
+            <br><br>
+            
+            <label for="raty" >Liczba rat: </label>
+            <input type="number" id="raty" name="raty" class="kontrolki" default="1" min="1" max="12">
+            <br><br>
+            
+            <select name="miasto" id="miasto" class="kontrolki">
+                <option value="Warszawa">Warszawa</option>
+                <option value="Katowice">Katowice</option>
+                <option value="Gdańsk">Gdańsk</option>
+            </select>
+            
+            <br><br>
+        </form>
+        <Button onclick="Oblicz()" class="kontrolki">Oblicz</Button>
+
+        <p id="wynik"></p>
+    </main>
+
+     <footer>
+        <p>Autor strony: 00000000000</p>
+    </footer>
+        
     
+    <script src="script.js"></script>
 </body>
 </html>
